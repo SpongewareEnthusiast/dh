@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>NEWS2 Calculator</title>
   <meta name="author" content="name">
   <meta name="description" content="description here">
   <meta name="keywords" content="keywords,here">
@@ -13,13 +13,14 @@
   </head>
   <body>
     <div class = "container">
+      <div class = "row"></br></br></div>
       <div class="row justify-content-sm-center">
       <div class="content col-sm-5 ">
         <h1>Patient Vitals</h1>
     <div class="box" id = "NameBox">
       <div class="row">
       <div class="col-sm-5">
-      <label for="Name"><img src="https://cdn3.iconfinder.com/data/icons/medical-health-care-set-3-services/256/Waiting_Room-512.png" alt="patient name" width="40" height="40"> Name </label>
+      <label for="Name"><img src="img/patient.jpg" alt="patient name" width="40" height="40"> Name </label>
     </div>
     <div class="col-sm-7">
   	 <input type="text" class="form-control" name="Name" id="Name" onchange="checkName(this.value)">
@@ -30,7 +31,7 @@
   <div class="box" id = "SystolicBPBox">
     <div class="row">
     <div class="col-sm-8">
-      <label for="SystolicBP"><img src="https://cdn2.iconfinder.com/data/icons/medical-equipment-supplies-1/256/Blood_Pressure_Kit-512.png" alt="Systolic Blood Pressure" width="40" height="40"> Systolic BP</label>
+      <label for="SystolicBP"><img src="img/bp.png" alt="Systolic Blood Pressure" width="40" height="40"> Systolic BP</label>
     </div>
     <div class="col-sm-4">
       <input type="number" class="form-control" name="SystolicBP" id="SystolicBP" min="30" max="260" onchange="checkValueBP(this.id , this.value)">
@@ -42,7 +43,7 @@
   <div class="box" id ="respiratoryRateBox">
     <div class="row">
     <div class="col-sm-8">
-    <label for="respiratoryRate"><img src="https://cdn1.iconfinder.com/data/icons/medical-sick/500/Medical-73-256.png" alt="Respiratory Rate" width="40" height="40"> Respiratory Rate </label>
+    <label for="respiratoryRate"><img src="img/rr.png" alt="Respiratory Rate" width="40" height="40"> Respiratory Rate </label>
   </div>
   <div class="col-sm-4">
   <input type="number" class="form-control" name="respiratoryRate" id="respiratoryRate" min="0" max="30" onchange = "checkValueRR(this.id , this.value)">
@@ -52,7 +53,7 @@
 <div class="box" id="heartRateBox">
   <div class="row">
   <div class="col-sm-8">
-  <label for="heartRate"><img src="https://cdn4.iconfinder.com/data/icons/medical-and-health-2/128/Medical_heart_rate-512.png" alt="Heart Rate" width="40" height="40">Heart Rate: </label>
+  <label for="heartRate"><img src="img/hr.png" alt="Heart Rate" width="40" height="40">Heart Rate: </label>
   </div>
 <div class="col-sm-4">
 <input type="number" class="form-control" name="heartRate" id="heartRate" min="0" max="150" onchange = "checkValueHR(this.id, this.value)">
@@ -63,7 +64,7 @@
   <div class="box" id="temperatureBox">
     <div class="row">
     <div class="col-sm-8">
-  <label for="temperature"><img src="https://cdn4.iconfinder.com/data/icons/proglyphs-weather/512/Termomether_-_Cold-256.png" alt="Temperature" width="40" height="40"> Temperature: </label>
+  <label for="temperature"><img src="img/temp.png" alt="Temperature" width="40" height="40"> Temperature: </label>
 </div>
 <div class="col-sm-4">
 <input type="number" class="form-control" name="temperature" id="temperature" min="15" max="48" step="0.1" onchange="checkTemperature(this.id, this.value)" >
@@ -73,7 +74,7 @@
 <div class="box" id = "satsBox">
   <div class="row">
   <div class="col-sm-8">
-  <label for="sats"><img src="https://cdn2.iconfinder.com/data/icons/inverticons-stroke-vol-2/32/water_transparent_blur_drop_blood-512.png" alt="Saturation" width="40" height="40">Spo2: </label>
+  <label for="sats"><img src="img/sat.png" alt="Saturation" width="40" height="40">Spo2: </label>
 </div>
 <div class="col-sm-4">
 <input type="number" class="form-control" name="sats" id="sats" min="70" max="100" onchange ="checkSats(this.id,this.value)">
@@ -99,7 +100,7 @@
 <div class="box" id="alertBox">
   <div class="row">
   <div class="col-sm-8">
-  <label for="alert"> <img src="https://cdn2.iconfinder.com/data/icons/head-blue/100/Head_10-512.png" alt="Alertness" width="40" height="40">Alert: </label>
+  <label for="alert"> <img src="img/alert.png" alt="Alertness" width="40" height="40">Alert: </label>
 </div>
 <div class="col-sm-4">
 <input type="checkbox" class="form-control" name="alert" id="alert"  onchange="checkAlertness(this.name,this.checked)" checked >
@@ -117,7 +118,7 @@
     <div class = "box resultBox" >
       <div class = "row results">
       <div class = "col-sm-6">
-      <label for="Name"><img src="https://cdn3.iconfinder.com/data/icons/medical-health-care-set-3-services/256/Waiting_Room-512.png" alt="patient name" width="40" height="40"> Name </label>
+      <label for="Name"><img src="img/patient.jpg" alt="patient name" width="40" height="40"> Name </label>
       </div>
       <div class = "col-sm-6" id ="resultName">
         <b>Please enter patient details</b>
@@ -126,7 +127,7 @@
     </div>
     <div class = "row results">
     <div class = "col-sm-6">
-    <label for="Name"><img src="https://cdn1.iconfinder.com/data/icons/health-care-medical/64/Healthcare__medical_icons-83-512.png" alt="urgency" width="40" height="40"> Urgency level </label>
+    <label for="Name"><img src="img/urgent.png" alt="urgency" width="40" height="40"> Urgency level </label>
     </div>
     <div class = "col-sm-6" id="resultBox">
     <b>Please enter patient details!</b>
@@ -135,7 +136,7 @@
   </div>
   <div class = "row results">
   <div class = "col-sm-6">
-  <label for="Name"><img src="https://www.shareicon.net/data/2016/07/21/799505_people_512x512.png" alt="queue" width="40" height="40"> No in queue </label>
+  <label for="Name"><img src="img/queue.png" alt="queue" width="40" height="40"> No in queue </label>
   </div>
   <div class = "col-sm-6" id ="resultQueue">
   <b>Please enter patient details</b>
@@ -145,16 +146,7 @@
     </div>
 </div>
   </div>
-  <div class = "row">
-    <h1> Queue status</h1>
-    <div class="media">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Charts_SVG_Example_5_-_Simple_Pie_Chart.svg/1280px-Charts_SVG_Example_5_-_Simple_Pie_Chart.svg.png" class="mr-2" width="600" height="400" alt="...">
-  <div class="media-body">
-    <h5 class="mt-0">Breakdown of patients</h5>
-  Patients sorted by urgency
-  </div>
-</div>
-</div>
+
 </div>
 </div>
 </div>
