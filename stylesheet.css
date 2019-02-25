@@ -2,9 +2,11 @@ body {
   display: flex;
   flex-justify: center;
 }
+
 .container {
   padding: 10px;
 }
+
 .box {
   width: 20rem;
   padding: 5px;
